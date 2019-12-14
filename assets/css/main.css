@@ -6,6 +6,11 @@
 
 body {
     background-color: #e5e5e5 !important;
+    color: #1b222c !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1b222c !important;
 }
 
 .container-fluid {
@@ -76,6 +81,10 @@ header.d-hero--shot .d-absolute--topleft {
     position: absolute;
     top: 30px;
     left: 30px;
+}
+
+.d-highlights--panel h1 {
+    font-size: 2em;
 }
 
 .d-box {
