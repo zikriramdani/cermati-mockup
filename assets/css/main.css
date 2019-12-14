@@ -1,0 +1,135 @@
+/* Variable */
+@import url('_variables.css');
+
+/* Responsive */
+/*@import url('responsive.css');*/
+
+body {
+    background-color: #e5e5e5 !important;
+}
+
+.container-fluid {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.navbar-custom {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #e5e5e5;
+}
+
+.navbar-custom .navbar-brand {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+header.d-hero-shot {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(7rem + 72px);
+    padding-bottom: 7rem;
+    background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.d-hero--shot .d-hero-shot__content {
+    z-index: 1;
+    position: relative;
+}
+
+header.d-hero--shot {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+    margin-top: 56px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header.d-hero--shot::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00005a;
+    opacity: 0.6;
+}
+
+header.d-hero--shot .d-absolute--topleft {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.d-box {
+    border: 1px solid #ababab;
+    padding: 20px;
+    position: relative;
+}
+
+.d-box .d-box__body p {
+    font-size: 14px;
+}
+
+.d-box .d-box__absolutetopright {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.d-box .d-box__absolutetopright i {
+    font-size: 40px;
+    color: #ababab;
+}
+
+.d-background--blue {
+    background-color: #050328;
+}
+
+.d-sliding--panel {
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    z-index: 1;
+    max-width: 50%;
+}
+
+.d-sliding--panel .toast{
+    background-color: #1682c3;
+    max-width: 100%;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    header.d-hero--shot {
+        margin-top: 182px !important;
+    }
+    .d-sliding--panel {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header.d-hero--shot {
+        margin-top: 88px;
+    }
+    .d-sliding--panel {
+        max-width: 100%;
+    }
+}
